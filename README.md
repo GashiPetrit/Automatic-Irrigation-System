@@ -41,11 +41,11 @@ A Wi-Fi-enabled plant-watering controller that keeps your greens thriving while 
 
 ---
 
-## 🖼 Screenshot & Diagram Gallery
+## 🖼 Diagram Gallery
 
 | | |
 |---|---|
-| ![Final System Diagram](media/system_overview.png) | *High-level wiring overview* |
+| ![Final System Diagram](media/ThoughtProcess.png) | *Initial Thought process* |
 
 
 ---
