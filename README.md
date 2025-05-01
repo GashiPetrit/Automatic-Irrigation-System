@@ -7,7 +7,9 @@
 
 <h1 align="center">🌱 Automatic Irrigation System</h1>
 
-> **A Wi-Fi-enabled plant-watering controller that keeps your greens thriving while you work on bigger projects.**
+<p align="center"><em>
+A Wi-Fi-enabled plant-watering controller that keeps your greens thriving while you work on bigger projects.
+</em></p>
 
 <div align="center">
 
@@ -17,6 +19,25 @@
 ![Responsive Web UI](https://img.shields.io/badge/Web_UI-Responsive-brightgreen?style=flat-square)
 
 </div>
+
+---
+
+<!-- System Overview Diagram -->
+<p align="center">
+  <img src="media/system_overview.png" alt="System overview: Moisture Sensor → ESP8266 D1 Mini → Browser UI & Relay → Pump   |   12 V Adapter → 5 V Reg → ESP8266 & Relay" width="80%">
+</p>
+
+---
+
+## ✨ Features at a Glance
+
+| Capability | Details |
+|------------|---------|
+| 🌡 **Live moisture sensing** | Capacitive sensor logs soil %RH every 10 s |
+| 💧 **Automatic pump control** | 12 V DC pump toggled via 5 V relay |
+| 📶 **Wi-Fi + Web UI** | ESP8266 hosts a mobile-friendly dashboard |
+| 🕒 **Scheduling & logging** | Time-based watering + CSV log download |
+| 🔌 **Fail-safe manual mode** | Hardware button overrides automation |
 
 ---
 
@@ -37,5 +58,17 @@
   </video>
 </p>
 
-*A quick look at hand-soldering the headers and relay connections.*
+---
 
+## 🚀 Quick Start
+
+```bash
+git clone https://github.com/GashiPetrit/Automatic-Irrigation-System.git
+cd Automatic-Irrigation-System
+
+# Flash MicroPython (adjust COM port)
+esptool.py --port COM3 erase_flash
+esptool.py --port COM3 --baud 460800 write_flash -z 0x00000 esp8266-20231005-v1.20.0.bin
+
+# Upload firmware
+mpremote connect COM3 cp src/main.py :main.py
