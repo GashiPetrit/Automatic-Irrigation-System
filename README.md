@@ -45,30 +45,7 @@ A Wi-Fi-enabled plant-watering controller that keeps your greens thriving while 
 
 | | |
 |---|---|
-| ![Thought Process](media/ThoughtProcess_of_system_overview.png) | *Early design sketch* |
 | ![Final System Diagram](media/system_overview.png) | *High-level wiring overview* |
 
----
-
-## 🔧 Soldering Walk-through
-
-<p align="center">
-  <video src="media/petrit_loddar.mp4" controls width="65%">
-    Sorry—your browser doesn’t support embedded video.
-  </video>
-</p>
 
 ---
-
-## 🚀 Quick Start
-
-```bash
-git clone https://github.com/GashiPetrit/Automatic-Irrigation-System.git
-cd Automatic-Irrigation-System
-
-# Flash MicroPython (adjust COM port)
-esptool.py --port COM3 erase_flash
-esptool.py --port COM3 --baud 460800 write_flash -z 0x00000 esp8266-20231005-v1.20.0.bin
-
-# Upload firmware
-mpremote connect COM3 cp src/main.py :main.py
