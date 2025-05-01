@@ -1,0 +1,8 @@
+Component,Quantity,Description,Approx. Price (SEK)
+ESP8266 D1 Mini,1,Mikrokontroller med WiFi,70
+Jordfuktighetssensor,1,Analog sensor för fuktmätning,30
+Relämodul 5V,1,Styr vattenpumpen (logisk brytare),25
+Vattenpump 12V,1,"Mini DC-pump, t.ex. 240 l/h",85
+12V nätadapter,1,Strömförsörjning för pumpen,75
+Dupontkablar (hona-hane),1,För koppling av komponenter,35
+Kopplingsdäck (valfritt),1,För testkoppling (om du inte löder),40

@@ -1,0 +1,16 @@
+site_name: Automatic Irrigation System
+site_url: https://gashipetrit.github.io/Automatic-Irrigation-System
+
+theme:
+  name: material
+  palette:
+    primary: green
+    accent: lime
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
